@@ -1,0 +1,119 @@
+%container
+  max-width: 1500px
+  margin: 0 auto
+  padding: auto
+
+$font-size: 35px
+.container
+  @extend %container
+.hi
+  font-family: 'Marck Script', cursive
+  text-align: center
+  font-size: 50px
+.anime-turkey
+  display: inline
+
+@keyframes blinking
+  0%
+    color: black
+  10%
+    color: red
+  20%
+    color: orange
+  30%
+    color: yellow
+  40%
+    color: green
+  50%
+    color: indigo
+  60%
+    color: violet
+  65%
+    color: black
+  70%
+    color: purple
+  80%
+    color: pink
+  85%
+    color: black
+  90%
+    color: Crimson
+  100%
+    color: Olive
+
+.anime-turkey
+  animation: blinking 35s infinite
+.store-description
+  font-family: 'Caveat', cursive
+  font-size: $font-size
+  border-bottom: 2px outset blue
+.what_s_in_the_store
+  font-size: 35px
+.on_sale
+  font-size: 25px
+/* Раздел названия продуктов + картинки их изображение
+ */
+.containerForImg
+  display: grid
+  grid-template-columns: 350px 350px 400px
+  grid-gap: 10px
+  grid-template-rows: auto auto 15px 15px auto auto 15px
+  grid-auto-rows: minmax(0,auto)
+$grid-display: grid
+%forImgAndSmallTag
+  width: 300px
+  height: 300px
+.production
+  grid-column: 1
+  grid-row: 1
+.cutlets
+
+  grid-column: 1
+  grid-row: 1
+
+.cutlets_sausage
+  grid-column: 2
+  grid-row: 1
+.for_products_picture1
+  @extend %forImgAndSmallTag
+  grid-column: 1
+  grid-row: 2
+.forTagSmallCordon
+  grid-column: 1
+  grid-row: 3
+.for_products_picture2
+  @extend %forImgAndSmallTag
+  grid-column: 2
+  grid-row: 2
+.forTagSmall2
+  grid-column: 2
+  grid-row: 3
+.img_chips
+  @extend %forImgAndSmallTag
+  grid-column: 3
+  grid-row: 2
+.chips
+  grid-column: 3
+  grid-row: 1
+.img_breast_fillet
+  @extend %forImgAndSmallTag
+  grid-column: 1
+  grid-row: 6
+.breast_fillet
+  grid-column: 1
+  grid-row: 5
+.smallFillet
+  grid-column: 1
+  grid-row: 7
+.img_cutletsForGamburger
+  @extend %forImgAndSmallTag
+  grid-column: 2
+  grid-row: 6
+.cutletsForGamburger
+  grid-column: 2
+  grid-row: 5
+.smallCutletsForGamburger
+  grid-column: 2
+  grid-row: 7
+.evaluate_the_products // бегущая строка оцени нашу продукцию
+  
