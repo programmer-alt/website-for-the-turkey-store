@@ -13,63 +13,146 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- endinject -->
+
     <title>Document</title>
 </head>
 
 <body>
+
     <div class="container">
         <header>
             <h1 class="hi">Магазин <span class="anime-turkey">Индюшенок</span></h1>
         </header>
-    </div>
     
+
     <section>
         <div class="container">
-        <h2>Описание магазина:</h2>
+            
+            <h2>Описание магазина:</h2>
             <p class="store-description">Магазин специализируется на мясной индюшиной продукции, готовая
                 продукция,полуфабрикаты из индейки, индюшиный фарш.</p>
-        </div>
+            </div>
+       
     </section>
     <section>
         <div class="container">
             <h3 class="on_sale">В продаже:</h3>
-            <p class="what_s_in_the_store">Голубцы, фаршированный перец, долма ,манты, вареники с адыгейским сыром,с
-                картошкой. Блины,с мясом ,печенкой,творогом ,клубникой,сгущенкой с ветчиной и сыром ,с
-                яблоком.Самса.колбаски гриль ,колбаски с индейкой,крупнорубленные с курицей и сыром.Чипсы из мяса,ск
-                колбаса,корпаче.
-                Хинкалии.Котлеты.Фарш из индейки.Плечи.Сосиски.Сардельки. Вареники с различыми вкусами
-            </p>
+         
+                <ul class="what_s_in_the_store"> 
+                    <li>Фаршированный перец</li>
+                    <li>Долма</li>
+                    <li>Манты</li>
+                    <li>Вареники с адыгейским сыром, с картошкой</li>
+                    <li>Блины с мясом, печенкой, творогом, клубникой, сгущенкой с ветчиной и сыром, с яблоком</li>
+                    <li>Самса</li>
+                    <li>Колбаски гриль</li>
+                    <li>Колбаски с индейкой</li>
+                    <li>Крупнорубленные с курицей и сыром</li>
+                    <li>Чипсы из мяса</li>
+                    <li>Ск колбаса</li>
+                    <li>Корпаче</li>
+                    <li>Хинкалии</li>
+                    <li>Котлеты</li>
+                    <li>Фарш из индейки</li>
+                    <li>Плечи</li>
+                    <li>Сосиски</li>
+                    <li>Сардельки</li>
+                    <li>Вареники с различными вкусами</li>
+                    <li>Пельмени</li>
+                    <li>Пирожки</li>
+                    <li>Зразы</li>
+                    <li>Фрикадельки</li>
+                    <li>Люля-кебаб</li>
+                    <li>Тефтели</li>
+                    <li>Сырники</li>
+                    <li>Крокет</li>
+                    <li>Равиоли</li>
+                    <li>Шницель домашний</li>
+                    <li>Голубцы</li>
+                    <li>Хинкалии</li>
+                    <li>Курзе рубленный</li>
+                    <li>Наггетсы классические</li>
+ 
+        </ul>
         </div>
     </section>
+    
     <h3 class="production">Продукция:</h3>
     <section>
+        <h3 style="display: none;">hi</h3>
         <div class="containerForImg">
-            
         <p class="cutlets">Котлеты</p>
-        <img  class="for_products_picture1" src="images/cutlets.jpg" alt="котлеты">
+        <div class="image_for_products_picture1">
+            <img class="for_products_picture1" src="images/cutlets.jpg" alt="котлеты">
+        </div>
         <small class="forTagSmallCordon">кордон,по-киевски</small>
-  
 
-        <p class="cutlets_sausage" >Котлеты. Колбаски</p>
-        <img src="images/cutlets&sausage.png" class="for_products_picture2"  alt="котлеты и колбаса">
+
+        <p class="cutlets_sausage">Котлеты. Колбаски</p>
+        <div class="image_for_products_picture2">
+            <img src="images/cutlets&sausage.png" class="for_products_picture2" alt="котлеты и колбаса">
+        </div>
         <small class="forTagSmall2">Из говяжьей печени в жировой сетке. Колбаски для жарки"</small>
-        
+
 
         <p class="chips">Чипсы </p>
-        <img src="images/chips.png" class="img_chips" alt="Чипсы">
-        <small>Копченые,охлажденые</small>
-        <marquee class="evaluate_the_products" behavior="alternate"  scrollamount="4" hspace="10" direction="left" style="color: yellow; background-color: blueviolet; grid-column: 1/span2 ;">Оцени нашу продукцию</marquee>
+        <div class="image_img_chips">
+            <img src="images/chips.png" class="img_chips" alt="Чипсы">
+        </div>
+        <small class="small_smoked">Копченые,охлажденые</small>
+
+        <marquee id="marquee" behavior="alternate" scrollamount="4" hspace="0" direction="left"
+            style="color: yellow; background-color: blueviolet; grid-column: 1/span 3 ; margin-right: 100px;">Оцени нашу
+            продукцию</marquee>
+
         <p class="breast_fillet">Филе грудки</p>
-        <img src="images/fillet.png" class="img_breast_fillet" alt="Филе грудки">
+        <div class="imge_img_breast_fillet">
+            <img src="images/fillet.png" class="img_breast_fillet" alt="Филе грудки">
+        </div>
         <small class="smallFillet">По царски</small>
 
         <p class="cutletsForGamburger">Котлеты</p>
-        <img src="images/cutletsGamburger.png" class="img_cutletsForGamburger" alt="Котлеты для гамбургера">
+        <div class="image_cutletsForGamburger">
+            <img src="images/cutletsGamburger.png" class="img_cutletsForGamburger" alt="Котлеты для гамбургера">
+        </div>
         <small class="smallCutletsForGamburger">Для гамбургеров</small>
-    </div> 
+
+        <p class="nuggets_cheburek">Чебуреки,наггетсы,миничебуреки</p>
+        <div class="image_nuggets_cheburek">
+            <img src="images/nuggets.png" class="img_nuggets_cheburek" alt="Чебуреки,Наггетсы">
+        </div>
+    </div>
     </section>
+ <p class="product_advertising"> <span style="font-size: larger;"> Мы приветствуем Вас в нашем магазине! У нас вы найдете самые вкусные и аутентичные блюда русской кухни.</span></p>
+ <section style="display: flex;">
+    <img src="images/needToThink.png" alt="Надо подумать" style="float: left; margin-right: 1px;">
+    <p style="color:rgb(112, 116, 108); font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; "> ПОЧЕМУ ИМЕННО ПРОДУКЦИЯ ИЗ <mark class="markMeat">ИНДЮШИНОГО МЯСА?</mark> ПОЧЕМУ СТОИТ ЕЁ ПОКУПАТЬ?! <br> КАКИЕ ЕСТЬ ВЕСКИЕ ПРИЧИНЫ 
+    ИЛИ АРГУМЕНТЫ ,ЧТОБЫ <mark class="markMeat">МОЙ ВЫБОР</mark> СКЛОНИЛСЯ В ПОЛЬЗУ РАЗЛИЧНЫХ ВИДОВ ВКУСНОСТЕЙ ИЗ ЭТОГО МЯСА?</p>
+</section>
+<section style="display: flex; flex-direction: column;">
+    <p class="reason" style="margin-bottom: 5px;">Причина № 1</p>
+    <p class="text-reason"> <strong> Низкое содержание жира:</strong> Индюшиное мясо обычно имеет более низкое содержание жира по сравнению с говядиной и свининой. Оно богато белком, но обладает более низким уровнем насыщенных жиров, что может быть <u>выгодным для людей, которые следят за потреблением жиров</u> в своей диете.</p>
+    <p class="reason" style="margin-bottom: 5px;">Причина № 2</p>
+    <p class="text-reason"> <strong>Низкое содержание холестерина:</strong> Индюшка обычно содержит <u>меньше холестерина</u> по сравнению с говядиной и свининой. Это может быть особенно полезно для людей, которые следят за уровнем холестерина в крови и стремятся поддерживать здоровый уровень.</p>
+    <p class="reason" style="margin-bottom: 5px;">Причина № 3</p>
+    <p class="text-reason"><strong>Богатство полезных питательных веществ: </strong><u>Индюшиное мясо содержит ценные питательные вещества</u>, такие как белок, железо, цинк, селен и витамины группы B. Эти питательные вещества не только поддерживают здоровье тканей и органов, но и способствуют нормальному обмену веществ и функционированию иммунной системы.</p>
+    <p class="reason" style="margin-bottom: 5px;">Причина № 4</p>
+    <p class="text-reason"><strong>Меньший риск инфекций:</strong> Индюшиный мясной продукт обычно проходит более <u>строгую проверку и контроль</u> на предмет бактерий, и поэтому имеет меньший риск бактериальных инфекций, связанных с пищевыми продуктами.</p>
+</section>
+
+
+
+
+    <!-- inject:js -->
+    <script src="/js/changeColor.js"></script>
+    <script src="/js/marquee.js"></script>
+    <script src="/js/observer.js"></script>
+    <!-- endinject -->
+   
 </body>
 
 </html>
