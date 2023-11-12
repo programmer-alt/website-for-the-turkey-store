@@ -1,0 +1,405 @@
+@charset "UTF-8";
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+body {
+  max-width: 1200px;
+}
+
+.hi {
+  font-family: "Marck Script", cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.anime-turkey {
+  display: inline;
+}
+
+@keyframes blinking {
+  0% {
+    color: black;
+  }
+  10% {
+    color: red;
+  }
+  20% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: indigo;
+  }
+  60% {
+    color: violet;
+  }
+  65% {
+    color: black;
+  }
+  70% {
+    color: purple;
+  }
+  80% {
+    color: pink;
+  }
+  85% {
+    color: black;
+  }
+  90% {
+    color: Crimson;
+  }
+  100% {
+    color: Olive;
+  }
+}
+.anime-turkey {
+  animation: blinking 35s infinite;
+}
+
+.store-description {
+  font-family: "Caveat", cursive;
+  font-size: 2.188rem;
+  border-bottom: 2px outset blue;
+  background-color: yellow;
+}
+
+.what_s_in_the_store {
+  font-size: 2.188rem;
+}
+
+.on_sale {
+  font-size: 25px;
+}
+
+/* Раздел названия продуктов + картинки их изображение
+ * */
+.containerForImg {
+  display: grid;
+  grid-template-columns: repeat(3, clamp(100px, 33vw, 1fr));
+  grid-gap: 10px;
+  grid-template-rows: auto auto 15px 15px 15px auto auto 15px auto;
+  grid-auto-rows: minmax(0, auto);
+  margin: 0 auto;
+}
+
+.image_nuggets_cheburek:hover, .image_cutletsForGamburger:hover, .imge_img_breast_fillet:hover, .image_img_chips:hover, .image_for_products_picture2:hover, .image_for_products_picture1:hover {
+  animation: transform 3s infinite;
+}
+@keyframes transform {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+  50.1% {
+    transform: perspective(200px) scale(2);
+  }
+  100% {
+    transform: perspective(200px) scale(1.3);
+  }
+}
+
+.img_nuggets_cheburek, .img_cutletsForGamburger, .img_breast_fillet, .img_chips, .for_products_picture2, .for_products_picture1 {
+  width: 300px;
+  height: 300px;
+}
+
+.production {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cutlets {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.cutlets_sausage {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.image_for_products_picture1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.forTagSmallCordon {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.image_for_products_picture2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.forTagSmall2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.image_img_chips {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.chips {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.small_smoked {
+  grid-column: 3;
+}
+
+.imge_img_breast_fillet {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.breast_fillet {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.smallFillet {
+  grid-column: 1;
+  grid-row: 8;
+}
+
+.image_cutletsForGamburger {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.cutletsForGamburger {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.smallCutletsForGamburger {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.nuggets_cheburek {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.image_nuggets_cheburek {
+  grid-column: 3;
+  grid-row: 7;
+}
+
+/* Раздел печатного стиля поле картинок */
+.product_advertising.animate {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 20s linear;
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+mark.markMeat {
+  background-color: yellow;
+}
+
+.reason {
+  font-family: "Arial", sans-serif;
+  font-size: 1.2em;
+  color: darkblue;
+  background-color: lightgray;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.reason:hover {
+  color: white;
+  background-color: darkblue;
+}
+
+.text-reason {
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+}
+
+#sentence span {
+  animation-name: colorChange;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #8B008B;
+  }
+  100% {
+    color: #00FF00;
+  }
+}
+.container1 {
+  /* анимация для проходящего бегущего блока */
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.container1 .separator {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.container1 .separator .running-light {
+  position: relative;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  animation: lightning 4s ease-in-out infinite;
+}
+@keyframes lightning {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 50%;
+    background-color: #C71585;
+  }
+  100% {
+    left: 100%;
+    background-color: #20B2AA;
+  }
+}
+
+.image-viewer {
+  width: 700px;
+  height: 350px;
+  overflow: hidden;
+  margin-left: 350px;
+}
+.image-viewer .image-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #008080;
+}
+.image-viewer .image-container .box {
+  margin-left: 100px;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.nameProduct {
+  font-family: "Pacifico", cursive;
+  border: 5px dotted blue;
+  border-radius: 10px;
+  font-size: 30px;
+  width: fit-content;
+}
+
+.shop {
+  margin-top: 10px;
+  background-color: #FFEBCD;
+  display: flex;
+  justify-content: center;
+}
+
+.containerShop {
+  margin-top: 10px;
+  background-image: url("/images/shop.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 1000px;
+  height: 700px;
+}
+
+/* адаптивная верстка  */
+@media (max-width: 820px) {
+  .hi {
+    display: flex;
+    align-items: center;
+    font-size: clamp(20px, 6vw, 30px);
+    margin: 0px auto;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container .store {
+    font-size: clamp(40%, 20vw, 75%);
+    background-color: green;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerForImg {
+    max-width: 970px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 992px) {
+  .containerForImg {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .containerForImg {
+    max-width: none;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_Float .think {
+    max-width: 970px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container_Float {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.con {
+  max-width: 300px;
+  word-break: break-all;
+}
