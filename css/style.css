@@ -410,6 +410,7 @@ mark.markMeat {
   max-width: 300px;
   word-break: break-all;
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 550px) {
   .think {
@@ -445,3 +446,5 @@ mark.markMeat {
     width: 100%;
   }
 }
+=======
+>>>>>>> 8b3b68b5242b2322990f8ffb72ecd6cfcaa80444
