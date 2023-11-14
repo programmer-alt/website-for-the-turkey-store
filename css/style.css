@@ -335,7 +335,7 @@ mark.markMeat {
 
 .containerShop {
   margin-top: 10px;
-  background-image: url("./images/shop.png");
+  background-image: url("../images/shop.png");
   background-repeat: no-repeat;
   background-position: center top;
   width: 1000px;
