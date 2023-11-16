@@ -82,7 +82,7 @@ body {
  * */
 .containerForImg {
   display: grid;
-  grid-template-columns: repeat(3, clamp(100px, 33vw, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-template-rows: auto auto 15px 15px 15px auto auto 15px auto;
   grid-auto-rows: minmax(0, auto);
@@ -204,7 +204,6 @@ body {
 /* Раздел печатного стиля поле картинок */
 .product_advertising.animate {
   overflow: hidden;
-  white-space: nowrap;
   animation: typing 20s linear;
 }
 @keyframes typing {
@@ -351,12 +350,11 @@ mark.markMeat {
   .containerForImg {
     display: flex;
     flex-direction: column;
-    width: 50%;
   }
 }
 @media screen and (max-width: 947px) {
   #marquee {
-    max-width: 100%;
+    max-width: 100vw;
   }
 }
 @media screen and (max-width: 826px) {
@@ -393,5 +391,16 @@ mark.markMeat {
   .shop .containerShop {
     background-size: cover;
     background-origin: content-box;
+  }
+}
+#marquee {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .runText {
+    max-height: 20vh;
+    display: flexbox;
+    flex-wrap: wrap;
   }
 }
