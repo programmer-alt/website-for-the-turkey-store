@@ -346,3 +346,52 @@ mark.markMeat {
 .adress {
   padding: 0 5px;
 }
+
+@media screen and (max-width: 947px) {
+  .containerForImg {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 947px) {
+  #marquee {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 826px) {
+  #marquee {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .think {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .image-viewer {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 634px) {
+  .image-viewer {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .image-viewer .image-container .box {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 751px) {
+  .shop {
+    margin: 0 auto;
+  }
+  .shop .containerShop {
+    background-size: cover;
+    background-origin: content-box;
+  }
+}
