@@ -1,12 +1,11 @@
 @charset "UTF-8";
 .container {
   max-width: 1200px;
-  padding: 0 15px;
 }
 
 body {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 
 .hi {
