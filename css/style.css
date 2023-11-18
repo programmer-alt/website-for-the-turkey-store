@@ -6,6 +6,7 @@
 
 body {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hi {
@@ -408,10 +409,6 @@ mark.markMeat {
   max-width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .runText {
-    max-height: 20vh;
-    display: flexbox;
-    flex-wrap: wrap;
-  }
+.runText .product_advertising .spanText {
+  white-space: nowrap;
 }
