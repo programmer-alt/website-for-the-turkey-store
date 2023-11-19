@@ -2,7 +2,6 @@
 body {
   max-width: 1200px;
   margin: 0 10px;
-  background-color: blue;
 }
 
 .hi {
@@ -343,7 +342,7 @@ mark.markMeat {
 
 /* адаптивная верстка  */
 .adress {
-  padding: 0 5px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 947px) {
@@ -362,13 +361,7 @@ mark.markMeat {
 @media screen and (max-width: 826px) {
   #marquee {
     max-width: 100%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .think {
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 420px) {
