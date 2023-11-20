@@ -352,6 +352,12 @@ mark.markMeat {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 326px) {
+  .store-description {
+    max-width: 100%;
+    word-break: break-all;
+  }
+}
 @media screen and (max-width: 947px) {
   #marquee {
     max-width: 100%;
