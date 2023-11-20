@@ -1,9 +1,11 @@
 @charset "UTF-8";
 body {
   max-width: 1200px;
-  margin: 0 10px;
+  margin: 0 auto;
 }
-
+* {
+  box-sizing: border-box;
+}
 .hi {
   font-family: "Marck Script", cursive;
   text-align: center;
